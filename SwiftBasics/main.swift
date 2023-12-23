@@ -120,3 +120,120 @@ print("Result is: \(float_1)") // back slash escape character can be used in ord
 
 
 
+//Operators
+/*
+ + Add
+ - Substract
+ * Multiply
+ / Divide
+ % Mod
+ */
+
+var sum = 7 + 3
+var subtract = 7 - 3
+var multiply = 7 * 3
+var divide = 7 / 3
+var mod = 7 % 3
+print("7 + 3 = \(sum)\n7 - 3 = \(subtract)\n7 * 3 = \(multiply)\n7 / 3 = \(divide)\n7 mod 3 = \(mod)")
+
+sum += 1 //Short
+
+print(sum)
+
+//Print random number to the screen between two numbers to be entered by user
+/*
+print("Please enter number 1")
+var number_1=Int(readLine() ?? "0")
+
+print("Please enter number 2")
+var number_2=Int(readLine() ?? "0")
+
+var random_number=Int.random(in: (number_1 ?? 0)...(number_2 ?? 0))
+
+print(random_number)
+*/
+
+//If conditionals
+var val:Int
+print("Enter a number...:")
+val=Int(readLine()!) ?? 0
+if val<15
+{
+    print("\(val) < 15")
+}
+else if val==15
+{
+    print("\(val) = 15")
+}
+else
+{
+    print("\(val) > 15")
+}
+
+// && AND
+// || OR
+
+//switch-case
+switch val
+{
+case 10: 
+    print("Value = 10")
+case 20:
+    print("Value = 20")
+case 30:
+    print("Value = 30")
+default:
+    print("Other")
+}
+
+switch val
+{
+case 0...9:
+    print("\(val) between 0-10")
+case 10:
+    print("\(val) = 10")
+case 11...19:
+    print("\(val) between 10-20")
+case 20:
+    print("\(val) = 20")
+case 21...29:
+    print("\(val) between 20-30")
+case 30:
+    print("\(val) = 30")
+case 31...39:
+    print("\(val) between 30-40")
+case 40:
+    print("\(val) = 40")
+case 41...49:
+    print("\(val) between 40-40")
+case 50:
+    print("\(val) = 50")
+case let y where y>50 && y<60:
+    print("\(val) between 50-60")
+default:
+    print("\(val) > 60")
+}
+
+var is_learnt:Bool
+is_learnt=true
+
+switch is_learnt
+{
+case true:
+    print("Swift has been learnt")
+case false:
+    print("Swift has not been learnt yet")
+}
+
+
+var dice_1 :Int
+var dice_2: Int
+
+for _ in Range(1...10)
+{
+    dice_1=Int.random(in: 1...6)
+    dice_2=Int.random(in: 1...6)
+    print("\(dice_1) - \(dice_2)")
+    
+}
+
